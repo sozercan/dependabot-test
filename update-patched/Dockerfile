@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/oss/v2/open-policy-agent/gatekeeper:v3.17.1-1
+FROM mcr.microsoft.com/oss/v2/open-policy-agent/gatekeeper:v3.17.1-2
