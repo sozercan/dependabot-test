@@ -1,0 +1,17 @@
+version: 2
+
+updates:
+  - package-ecosystem: docker
+    directory: "/to-patched"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: docker
+    directory: "/update-patched"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "*"
+        update-types:
+        - "version-update:semver-major"
+        - "version-update:semver-minor"
